@@ -54,9 +54,6 @@ def predict():
         output=pred['predictions'][0]['values'][0][0]
         print(output)
         return render_template("result.html",prediction=output)
-        
-def formpg():
-    return render_template('prevention.html')
 
 if __name__ == '__main__':
 	app.run(debug=True)
